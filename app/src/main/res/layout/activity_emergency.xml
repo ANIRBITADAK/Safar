@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/r"
+    android:visibility="visible"
+    tools:context=".emergency">
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="335dp"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+
+                <RadioButton
+                    android:id="@+id/fire"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/ambulance"
+                    android:layout_marginTop="77dp"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/fire"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/ambulance"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"
+                    android:checked="false"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/ambulance"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/police"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/ambulance"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/police"
+                    android:textAlignment="center"
+                    android:textColor="#f5f5f5"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/women"
+                    android:layout_width="261dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/police"
+                    android:layout_marginBottom="72dp"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/women_help_line"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/child"
+                    android:layout_width="261dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/women"
+                    android:layout_marginBottom="19dp"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/child_abuse_helpline"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RadioGroup>
+
+</RelativeLayout>

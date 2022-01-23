@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".endscreen">
+
+    <TextView
+        android:id="@+id/goodbye"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/orbitron_medium"
+        android:text="@string/good_bye"
+        android:textAlignment="center"
+        android:textColor="#6738ca"
+        android:textSize="70sp"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/orbitron_medium"
+        android:textAlignment="center"
+        android:textColor="#e70557f1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/startbutton"
+        android:fontFamily="@font/orbitron"
+        android:text="@string/ok"
+        android:textAlignment="center"
+        android:textColor="#64b5f6"
+        android:textSize="20sp" />
+</RelativeLayout>

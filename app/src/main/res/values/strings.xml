@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Safar</string>
+    <string name="todo">TODO</string>
+    <string name="music">MUSIC</string>
+    <string name="navigate">NAVIGATE</string>
+    <string name="call">CALL</string>
+    <string name="exit">EXIT</string>
+    <string name="video">VIDEO</string>
+    <string name="start">START</string>
+    <string name="good_bye">Good Bye</string>
+    <string name="ok">OK</string>
+    <string name="emergency">Emergency</string>
+    <string name="callemer">CALL</string>
+    <string name="ambulance">AMBULANCE</string>
+    <string name="police">POLICE</string>
+    <string name="fire">FIRE</string>
+    <string name="women_help_line">WOMEN HELP LINE</string>
+    <string name="child_abuse_helpline">CHILD ABUSE HELPLINE</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYW5pcmJpdCIsImEiOiJjamtiaXNid2EyaGFwM3dvNDRwNnE0bDhuIn0.dmzUPpBPMtEWa_xckj5bww</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search">Search</string>
+    <string name="fuel">FUEL</string>
+    <string name="car_wash">CAR WASH</string>
+    <string name="parking">PARKING</string>
+    <string name="car_repair">CAR REPAIR</string>
+    <string name="services">SERVICES</string>
+    <string name="title_activity_maps2">Map</string>
+</resources>

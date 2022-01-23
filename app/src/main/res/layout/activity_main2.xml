@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/digit_speed_bg"
+    android:keepScreenOn="true"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/navigate"
+        android:layout_width="91dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="26dp"
+        android:background="@android:drawable/ic_menu_directions"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/music"
+        android:layout_width="111dp"
+        android:layout_height="92dp"
+        android:layout_alignTop="@+id/navigate"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/ic_media_play" />
+
+    <Button
+        android:id="@+id/video"
+        android:layout_width="82dp"
+        android:layout_height="78dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/navigate"
+        android:layout_marginEnd="26dp"
+        android:background="@android:drawable/ic_menu_slideshow"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="87dp"
+        android:layout_height="66dp"
+        android:layout_alignStart="@+id/navigate"
+        android:layout_alignTop="@+id/google"
+        android:background="@android:drawable/stat_sys_phone_call"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_alignBottom="@+id/call"
+        android:layout_alignStart="@+id/video"
+        android:background="@android:drawable/ic_delete"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="93dp"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/googlelogo"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/timedisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/orbitron_medium"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#ffffff"
+        android:textSize="45sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/nav"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/navigate"
+        android:layout_below="@+id/music"
+        android:fontFamily="@font/orbitron_medium"
+        android:text="@string/navigate"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music"
+        android:layout_centerHorizontal="true"
+        android:text="@string/music"
+        android:fontFamily="@font/orbitron_medium"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/VID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/music"
+        android:layout_marginEnd="45dp"
+        android:text="@string/video"
+        android:fontFamily="@font/orbitron_medium"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/call"
+        android:layout_marginStart="47dp"
+        android:fontFamily="@font/orbitron_medium"
+        android:text="@string/call"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/VID"
+        android:layout_below="@+id/call"
+        android:fontFamily="@font/orbitron_medium"
+        android:text="@string/exit"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/emerg"
+        android:layout_width="87dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/video"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/help"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/services"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_alignBottom="@+id/emerg"
+        android:layout_alignStart="@+id/navigate"
+        android:background="@android:drawable/ic_menu_preferences" />
+
+    <TextView
+        android:id="@+id/SERVICES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/navigate"
+        android:layout_below="@+id/emerg"
+        android:fontFamily="@font/orbitron_medium"
+        android:text="@string/services"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="409dp"
+        android:layout_height="161dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="125dp" />
+
+
+</RelativeLayout>
